@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>For Yvonne ✨</title>
+<title>Madamz Sweetcheeks ✨</title>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
 <style>
     .emo{-webkit-text-fill-color:initial;font-style:normal}
@@ -157,21 +157,20 @@ body::before{content:"";position:fixed;inset:0;z-index:0;background:
 <section class="scene" id="gallery">
   <h2 class="big">Moments in Time</h2>
   <div class="wall" id="wall"></div>
-  <button class="go" id="toFinale">One last thing…</button>
+  <button class="go" id="toFinale">Finally…</button>
 </section>
 
 <section class="scene" id="s-final">
-  <p class="fin" id="f1">Out of everyone,</p>
-  <p class="fin" id="f2">the universe made one Yvonne.</p>
-  <p class="fin" id="f3">Thank you for being you.</p>
+  <p class="fin" id="f1">You are one of a kind</p>
+  <p class="fin" id="f2">The people around you are blessed.</p>
+  <p class="fin" id="f3">Thanks for being a blessing.</p>
   <div class="sign" id="sign"></div>
-  <button class="go" id="replay" style="margin-top:36px;opacity:0;transition:opacity 1.5s">Replay the magic</button>
+  <button class="go" id="replay" style="margin-top:36px;opacity:0;transition:opacity 1.5s">Replay </button>
 </section>
 
 <audio id="song" loop preload="auto"><source src="Happy%20Birthday%20Prayers.mp3" type="audio/mpeg"></audio>
 
 <script>
-/* ================= EDIT YOUR CONTENT HERE ================= */
 const NAME = "Mercy";
 const INTRO_LINES = [
   "20 years ago, a day like today - God gave the world a precious gift in you.",
@@ -180,20 +179,19 @@ const INTRO_LINES = [
 ];
 const LETTER_TITLE = "Me to you, " + NAME + ",";
 const LETTER = [
-  "Happy Happy birthday. Truly.",
+  "Happy Happy birthday, dear",
   "You are born for an impact. Personally I am proud of you. From the very first day I met you, I knew you were special. May your year be full of 'Faithful God' testimonies and your light so shine before men that the good works in you glorify Him ",
-  "Keep winning, keep shining. You have a special place in my heart and I love you so much"
+  "Keep winning, keep shining. You have a special place in my heart and I love you so much ❤"
 ];
 const SIGNATURE = "Happy Birthday ❤";
 const PHOTOS = [
-  { src: "Yvonne.jpg",   cap: "Pure sunshine" },
-  { src: "Yvonne1.jpg",  cap: "That smile, though" },
-  { src: "Yvonne2.jpeg", cap: "Main character energy" },
-  { src: "Yvonne3.jpeg", cap: "Never a dull moment" },
-  { src: "Yvonne4.jpeg", cap: "Golden hour person" },
-  { src: "Yvonne6.jpeg", cap: "Here's to this year" }
+  { src: "Mercy1.png",   cap: "Blessed ❤" },
+  { src: "Mercy2.jpg",  cap: "The Winner's smile" },
+  { src: "Mercy3.png", cap: "Always happy" },
+  { src: "Mercy4.png", cap: "Lovely ❤" },
+  { src: "Mercy4.jpg", cap: "Pure bliss ❤" },
+  { src: "Mercy6.png", cap: "Fruitful ❤" }
 ];
-/* ========================================================== */
 
 const $ = id => document.getElementById(id);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -291,7 +289,7 @@ $('nextBtn').onclick = () => { if (li < INTRO_LINES.length-1){ li++; runLines();
 
 $('star').onclick = async function(){
   this.classList.add('used'); this.disabled = true;
-    $('wishTitle').innerHTML = `I still remember you had to make me save you as Daisy before I knew your real name <span class="emo">😂</span>,anyways <span class="emo">😂😂</span>..`;
+    $('wishTitle').innerHTML = `I still remember you had to make me save your contact as Daisy before I knew your real name <span class="emo">😂</span>,anyways <span class="emo">😂😂</span>..`;
   for (let i = 0; i < 7; i++) setTimeout(() => burst(innerWidth*(.15 + Math.random()*.7), innerHeight*(.15 + Math.random()*.5), 90), i*380);
   lanterns(mobile ? 10 : 16);
   await sleep(3200);
